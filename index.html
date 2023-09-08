@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bank Account</title>
-  </head>
-  <body>
-    <h1>Bank Account Operations</h1>
-    <script src="bank_account.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banking System</h1>
+    <div>
+        <h2>Saldo Anda: <span id="saldoDisplay">0</span></h2>
+    </div>
+    <div>
+        <label for="depositAmount">Jumlah Deposit:</label>
+        <input type="number" id="depositAmount">
+        <button id="depositBtn">Deposit</button>
+    </div>
+    <div>
+        <label for="withdrawAmount">Jumlah Withdraw:</label>
+        <input type="number" id="withdrawAmount">
+        <button id="withdrawBtn">Withdraw</button>
+    </div>
+    <div>
+        <p id="notification"></p>
+    </div>
+
+    <script src="banking_system.js"></script>
+</body>
 </html>
