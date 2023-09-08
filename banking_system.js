@@ -1,4 +1,3 @@
-// Fungsi untuk mengonversi nilai numerik menjadi format mata uang Rupiah (IDR)
 const formatToRupiah = (value) => {
     return new Intl.NumberFormat("id-ID", {
         style: "currency",
